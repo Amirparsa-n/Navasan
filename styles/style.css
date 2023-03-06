@@ -1,0 +1,182 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: dana;
+    src: url(../font/DaalRegular/DaalRegular.ttf);
+    src: url(../font/DaalRegular/DaalRegular.woff);
+    src: url(../font/DaalRegular/DaalRegular.otf);
+}
+
+@font-face {
+    font-family: danaBold;
+    src: url(../font/dana-bold/dana-bold.ttf);
+    src: url(../font/dana-bold/dana-bold.woff);
+    src: url(../font/dana-bold/dana-bold.otf);
+}
+
+body {
+    font-family: dana;
+    /* background-color: #c0dfd3; */
+    /* background-color: #d8e2de; */
+}
+
+
+#header {
+    text-align: center;
+    margin-top: 34px;
+}
+
+#header .logo img {
+    width: 70px;
+    margin-left: 5px;
+}
+
+#header .logo h1 {
+    display: inline-block;
+    font-family: danaBold;
+    font-size: 35px;
+    color: #4CAF50;
+    vertical-align: -2px;
+}
+
+#header .date {
+    background-color: #4CAF50;
+    color: #fff;
+    display: inline;
+    float: left;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 13px;
+}
+
+
+#arz {
+    margin-top:  150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#arz .usd {
+    border: 3px solid #4CAF50;
+    border-radius: 10px;
+}
+
+#arz .box img {
+    width: 100px;
+    opacity: 0.8;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+    /* padding-right: 22px; */
+}
+
+#arz .box img:hover {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+#arz .box {
+    padding: 30px 50px;
+    text-align: center;
+}
+
+#arz .box h2 {
+    margin-top: 34px;
+    font-family: danaBold;
+    margin-bottom: 20px;
+    font-size: 24px;
+    transition: 0.4s;
+
+}
+
+#arz .box h2:hover {
+    color: #FF0000;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#arz .box .price {
+    font-size: 22px;
+}
+
+
+/* loading */
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 10px;
+    margin-top: 0;
+    /* background-color: rebeccapurple; */
+    
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: -3px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #4CAF50;
+    
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+
+
+
+
+@media (max-width: 600px) {
+    #header .logo {
+      text-align: right;
+    }
+
+    #arz .box img {
+        padding-right: 0;
+    }
+  }
+
+  @media (max-width: 575px) {
+    #arz div {
+      margin-bottom: 20px;
+    }
+  }
+
