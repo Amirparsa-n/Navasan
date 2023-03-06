@@ -163,6 +163,30 @@ body {
 
 
 
+/* footer */
+
+#footer {
+  background-color: #4CAF50;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+
+}
+
+#footer .copyright {
+  text-align: center;
+  font-family: dana;
+  font-size: 14px;
+}
+
+#footer .copyright p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+
 
 @media (max-width: 765px) {
     #header .logo {
@@ -184,6 +208,15 @@ body {
   @media (max-width: 575px) {
     #arz div {
       margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    #footer {
+      margin-top: 40px;
+      position: static;
+      width: 100%;
+      border-radius: 10px 10px 0 0;
     }
   }
 
