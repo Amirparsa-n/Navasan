@@ -164,7 +164,7 @@ body {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 765px) {
     #header .logo {
       text-align: right;
     }
@@ -172,6 +172,13 @@ body {
     #arz .box img {
         padding-right: 0;
     }
+
+    #arz .box img {
+      float: right;
+      margin-top: 14px;
+    }
+
+
   }
 
   @media (max-width: 575px) {
